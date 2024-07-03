@@ -1,7 +1,9 @@
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FlotingNavbar";
-import Grid from '@/components/ui/Grid';
+import Grid from "@/components/Grid";
 import React from "react";
+import Projects from "@/components/Projects";
+import Testimonials from "@/components/Testimonials";
 
 const navItems = [
   {
@@ -15,7 +17,7 @@ const navItems = [
   {
     name: "Testimonials",
     link: "/",
-  }
+  },
 ];
 const page = () => {
   return (
@@ -24,6 +26,8 @@ const page = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <Projects />
+        <Testimonials />
       </div>
     </main>
   );
