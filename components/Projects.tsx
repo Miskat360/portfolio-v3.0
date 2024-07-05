@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id="projects" className="relative py-8 md:py-14 lg:py-16">
       <TextGenerateEffect
-        className="text-xl md:text-3xl lg:text-4xl text-center"
+        className="text-2xl md:text-3xl lg:text-4xl text-center"
         words="A small selection of recent projects"
       />
       <div className="relative flex flex-wrap">
