@@ -6,6 +6,8 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import MagicButton from "./MagicButton";
 import animationData from "@/data/confetti.json";
+import { getInTouch } from "@/data";
+import { IconContext } from "react-icons";
 export const BentoGrid = ({
   className,
   children,
@@ -24,10 +26,6 @@ export const BentoGrid = ({
     </div>
   );
 };
-// interface socialMedia {
-//   icon: String;
-//   link: String;
-// }
 export const BentoGridItem = ({
   className,
   id,
@@ -38,7 +36,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
-}: // socialMedia
+}:
 {
   className?: string;
   id: number;
@@ -49,7 +47,6 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
-  // socialMedia?: Array<socialMedia>;
 }) => {
   const leftLists = ["ReactJS", "TypeScript", "PHP"];
   const rightLists = ["Laravel", "NextJS", "Tailwind CSS"];
@@ -152,6 +149,20 @@ export const BentoGridItem = ({
                   </span>
                 ))}
               </div>
+            </div>
+          )}
+          {id === 4 && (
+            <div className="flex items-center flex-wrap mt-4 gap-4 text-xl">
+              {getInTouch.map(({id, icon, link})=>{
+                const IconContainer = icon;
+                return(
+                  <a key={id} href={link} target="_blank" className={`w-10 h-10 flex items-center justify-center bg-black-200 border border-black-300 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-75 saturate-150 ${id == 1 && "text-2xl"} ${id == 5 && "text-lg"}`}>
+                    <IconContext.Provider value={{}}>
+                      <IconContainer />
+                    </IconContext.Provider>
+                  </a>
+                )
+              })}
             </div>
           )}
           {id === 6 && (

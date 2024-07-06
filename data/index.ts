@@ -1,10 +1,12 @@
-import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp, IoMailOutline } from "react-icons/io5";
+import { IoLogoWhatsapp, IoMailOutline } from "react-icons/io5";
+import { TbBrandLinkedin } from "react-icons/tb";
+import { VscGithub } from "react-icons/vsc";
+import { FiTwitter } from "react-icons/fi";
 
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -184,14 +186,14 @@ export const workExperience = [
     id: 2,
     title: "Mobile App Dev - JSM Tech",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance App Dev Project",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
@@ -207,43 +209,43 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: ""
+    link: "https://github.com/Miskat360"
   },
   {
     id: 2,
     img: "/twit.svg",
-    link: ""
+    link: "https://twitter.com/?lang=en"
   },
   {
     id: 3,
     img: "/link.svg",
-    link: ""
+    link: "https://www.linkedin.com/in/miskat-hasan-42012125b/"
   },
 ];
-export const GetInTouch = [
+export const getInTouch = [
   {
     id: 1,
-    icon: "<IoLogoWhatsapp/>",
-    link: "",
+    icon: TbBrandLinkedin,
+    link: "https://www.linkedin.com/in/miskat-hasan-42012125b/",
   },
   {
     id: 2,
-    icon: "<IoMailOutline/>",
-    link: "",
+    icon: IoLogoWhatsapp,
+    link: "https://wa.me/01859580365?text=Hello How Can I help you?",
   },
   {
     id: 3,
-    icon: "<IoLogoGithub/>",
-    link: "",
+    icon: VscGithub,
+    link: "https://github.com/Miskat360",
   },
   {
     id: 4,
-    icon: "<IoLogoLinkedin/>",
-    link: "",
+    icon: IoMailOutline,
+    link: "mailto:bitwield@gmail.com",
   },
   {
     id: 5,
-    icon: "<IoLogoFacebook/>",
-    link: "",
+    icon: FiTwitter,
+    link: "https://twitter.com/?lang=en",
   }
 ]
